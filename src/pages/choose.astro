@@ -1,0 +1,30 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import objects from '@/data/objects.json';
+import { yes } from '@/lib/utils';
+const chooser=objects.filter((o)=>yes(o.showInChooser)).map((o)=>({slug:o.slug,name:o.name,approach:o.approach,subtype:o.subtype,specificity:o.specificity,construct:o.primaryConstruct,constructs:(o.constructs||[]).map(c=>c.label),domain:(o.constructs||[]).map(c=>c.domain).filter(Boolean),respondent:o.identity?.respondent_perspective,use:o.identity?.intended_use,complete:o.isEvidenceComplete}));
+const approaches=[...new Set(chooser.map(o=>o.approach))];
+const domains=[...new Set(chooser.flatMap(o=>o.domain))].sort();
+---
+<BaseLayout title="Help me choose" wide>
+  <section class="page-head compact"><div class="eyebrow">Help me choose</div><h1>Narrow the options transparently</h1><p>This tool filters the catalogue. It does not score, rank or recommend one option over another.</p></section>
+  <div class="chooser-layout">
+    <aside class="chooser-controls panel">
+      <h2>Your filters</h2>
+      <label><span>What broad outcome/domain matters?</span><select id="domain"><option value="">Any domain</option>{domains.map(d=><option>{d}</option>)}</select></label>
+      <label><span>What kind of approach?</span><select id="approach"><option value="">Any approach</option>{approaches.map(a=><option>{a}</option>)}</select></label>
+      <label><span>Search construct or use</span><input id="query" type="search" placeholder="e.g. wellbeing, change, affected others"/></label>
+      <label class="check"><input id="evidence" type="checkbox"/><span>Show evidence-characterised examples only</span></label>
+      <button id="reset" class="button ghost">Reset</button>
+      <p class="small muted">Filters are inclusion rules only. No evidence weighting or preference score is applied.</p>
+    </aside>
+    <section><div class="result-bar"><strong id="chooser-count"></strong> options match</div><div id="chooser-results" class="card-grid"></div></section>
+  </div>
+  <script type="application/json" id="chooser-data" set:html={JSON.stringify(chooser)}></script>
+</BaseLayout>
+<script>
+  const data=JSON.parse(document.querySelector('#chooser-data').textContent);const base=document.documentElement.dataset.base||'/';
+  const domain=document.querySelector('#domain'), approach=document.querySelector('#approach'), query=document.querySelector('#query'), evidence=document.querySelector('#evidence'), result=document.querySelector('#chooser-results'), count=document.querySelector('#chooser-count');
+  function render(){const q=query.value.toLowerCase().trim();const rows=data.filter(o=>(!domain.value||o.domain.includes(domain.value))&&(!approach.value||o.approach===approach.value)&&(!evidence.checked||o.complete)&&(!q||`${o.name} ${o.construct||''} ${o.constructs.join(' ')} ${o.respondent||''} ${o.use||''}`.toLowerCase().includes(q))).sort((a,b)=>a.name.localeCompare(b.name)); count.textContent=rows.length; result.innerHTML=rows.slice(0,80).map(o=>`<a class="measure-card" href="${base}measure/${o.slug}/"><span class="approach-badge">${o.approach}</span><h3>${o.name}</h3><p>${o.construct||o.subtype}</p><span class="status ${o.complete?'calibrated':'mapped'}">${o.complete?'Evidence characterised':'Evidence pending'}</span></a>`).join(''); if(rows.length>80) result.insertAdjacentHTML('afterend','<p class="muted">Showing first 80 matches. Add another filter to narrow the list.</p>')}
+  [domain,approach,evidence].forEach(x=>x.addEventListener('change',render));query.addEventListener('input',render);document.querySelector('#reset').addEventListener('click',()=>{domain.value='';approach.value='';query.value='';evidence.checked=false;render()});render();
+</script>

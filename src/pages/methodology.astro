@@ -1,0 +1,15 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import siteMeta from '@/data/site-meta.json';
+---
+<BaseLayout title="Methodology">
+  <section class="page-head"><div class="eyebrow">About this prototype</div><h1>How MeasureGH treats evidence</h1><p class="lede">A structured evidence characterisation designed to support transparent choice — not a league table of measures.</p></section>
+  <div class="prose panel">
+    <h2>What is included</h2><p>The current V3 uses {siteMeta.calibrationComplete} fully characterised calibration exemplars to test a public architecture covering all five Ways to Measure. The broader catalogue contains {siteMeta.eligibleObjects} eligible mapped evidence objects; most of those have not yet had P1C-B evidence characterisation.</p>
+    <h2>Exact-form attribution</h2><p>Evidence is attached to the form, version, operationalisation or implementation actually studied. Family-level search helps discovery, but evidence is not silently inherited by every variant.</p>
+    <h2>Evidence counts</h2><p>Subsequent primary evidence is counted by study programme where multiple publications belong to the same programme. Author independence is distinguished from dataset independence. Reviews, empirical applications and implementation resources are kept separate.</p>
+    <h2>No quality ranking</h2><p>MeasureGH displays evidence breadth, limitations and configuration requirements. It does not calculate an overall score, star rating or hidden ranking. “Help me choose” is a transparent filter, not a recommendation algorithm.</p>
+    <h2>Calibration status</h2><p>This is a product-testing stage. Type-specific specification fields identified during calibration are shown where possible, then will be frozen after Website V3 review before production-scale evidence characterisation.</p>
+    <h2>Data authorities</h2><ul><li>{siteMeta.sourceWorkbook}</li><li>{siteMeta.identityAuthority}</li></ul>
+  </div>
+</BaseLayout>

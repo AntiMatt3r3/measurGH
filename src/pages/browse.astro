@@ -1,0 +1,58 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ApproachBadge from '@/components/ApproachBadge.astro';
+import objects from '@/data/objects.json';
+import { withBase, yes } from '@/lib/utils';
+const browseObjects = objects;
+const approaches=[...new Set(objects.map((o) => o.approach))];
+const specificities=[...new Set(objects.map((o) => o.specificity).filter(Boolean))];
+---
+<BaseLayout title="Browse" wide>
+  <section class="page-head compact"><div class="eyebrow">Browse</div><h1>Ways to measure gambling-related outcomes and context</h1><p>Search by name or construct, then narrow by approach. Nested variants/components are hidden initially so the browse view behaves like a public catalogue rather than a backend register.</p></section>
+  <section class="filter-panel" aria-label="Browse filters">
+    <label class="search-field"><span>Search</span><input id="search" type="search" placeholder="e.g. financial harm, PGSI, treatment dropout" /></label>
+    <label><span>Approach</span><select id="approach"><option value="">All approaches</option>{approaches.map((a) => <option>{a}</option>)}</select></label>
+    <label><span>Specificity</span><select id="specificity"><option value="">All</option>{specificities.map((s) => <option>{s}</option>)}</select></label>
+    <label class="check"><input id="calibrated" type="checkbox" /> <span>Evidence-characterised only</span></label>
+    <label class="check"><input id="nested" type="checkbox" /> <span>Show nested variants/components</span></label>
+    <button class="button ghost" id="clear" type="button">Clear filters</button>
+  </section>
+  <div class="result-bar"><strong id="count">0</strong> records shown <span id="compare-summary"></span></div>
+  <div id="browse-grid" class="browse-grid">
+    {browseObjects.map((o) => <article class="measure-card browse-card" data-search={`${o.name} ${o.acronym || ''} ${o.primaryConstruct || ''} ${(o.constructs||[]).map(c=>c.label).join(' ')} ${o.subtype}`.toLowerCase()} data-approach={o.approach} data-specificity={o.specificity || ''} data-calibrated={o.isEvidenceComplete ? 'yes':'no'} data-nested={yes(o.browseIndependently) ? 'no':'yes'}>
+      <ApproachBadge approach={o.approach}/>
+      <h2><a href={withBase(`measure/${o.slug}/`)}>{o.name}</a>{o.acronym && <small>{o.acronym}</small>}</h2>
+      <p>{o.primaryConstruct || o.subtype}</p>
+      <div class="tag-row">{o.familyName && <span class="tag">{o.familyName}</span>}{o.subtype && <span class="tag pale">{o.subtype}</span>}</div>
+      <div class="card-footer"><span class:list={['status',o.isEvidenceComplete?'calibrated':'mapped']}>{o.isEvidenceComplete?'Evidence characterised':'Mapped; evidence pending'}</span>{yes(o.compareIndependently) && <label class="compare-check"><input type="checkbox" data-compare={o.slug} data-name={o.name}/> Compare</label>}</div>
+    </article>)}
+  </div>
+  <div id="compare-tray" class="compare-tray" hidden><span><strong id="compare-count">0</strong> selected</span><button id="compare-go" class="button primary">Compare selected</button><button id="compare-clear" class="button ghost">Clear</button></div>
+</BaseLayout>
+<script>
+  const base=document.documentElement.dataset.base || '/';
+  const $=(q)=>document.querySelector(q);
+  const cards=[...document.querySelectorAll('.browse-card')];
+  const search=$('#search'), approach=$('#approach'), specificity=$('#specificity'), calibrated=$('#calibrated'), nested=$('#nested');
+  const params=new URLSearchParams(location.search);
+  if(params.get('approach')) approach.value=params.get('approach');
+  if(params.get('q')) search.value=params.get('q');
+  const apply=()=>{
+    const q=search.value.trim().toLowerCase(); let n=0;
+    cards.forEach(card=>{
+      const show=(!q || card.dataset.search.includes(q)) && (!approach.value || card.dataset.approach===approach.value) && (!specificity.value || card.dataset.specificity===specificity.value) && (!calibrated.checked || card.dataset.calibrated==='yes') && (nested.checked || card.dataset.nested==='no');
+      card.hidden=!show; if(show)n++;
+    }); $('#count').textContent=n;
+  };
+  [search,approach,specificity,calibrated,nested].forEach(el=>el.addEventListener(el.tagName==='INPUT'?'input':'change',apply));
+  $('#clear').addEventListener('click',()=>{search.value='';approach.value='';specificity.value='';calibrated.checked=false;nested.checked=false;apply();history.replaceState(null,'',location.pathname)});
+  apply();
+
+  const selected=new Map(); const tray=$('#compare-tray');
+  document.querySelectorAll('[data-compare]').forEach(cb=>cb.addEventListener('change',e=>{
+    if(e.target.checked){if(selected.size>=4){e.target.checked=false;alert('Compare up to four records at a time.');return;} selected.set(e.target.dataset.compare,e.target.dataset.name)} else selected.delete(e.target.dataset.compare);
+    $('#compare-count').textContent=selected.size; tray.hidden=selected.size===0;
+  }));
+  $('#compare-go').addEventListener('click',()=>{location.href=`${base}compare/?items=${encodeURIComponent([...selected.keys()].join(','))}`});
+  $('#compare-clear').addEventListener('click',()=>{selected.clear();document.querySelectorAll('[data-compare]').forEach(x=>x.checked=false);tray.hidden=true;$('#compare-count').textContent='0'});
+</script>

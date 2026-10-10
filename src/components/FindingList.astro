@@ -1,0 +1,23 @@
+---
+const { findings = [] } = Astro.props;
+const grouped = findings.reduce((a,f) => ((a[f.evidence_domain || 'Other'] ||= []).push(f), a), {});
+---
+{findings.length > 0 && <section class="panel" aria-labelledby="findings-heading">
+  <h2 id="findings-heading">Evidence details</h2>
+  <p class="muted">Source-linked findings retained during evidence characterisation. These are not quality scores.</p>
+  <div class="accordion-stack">
+    {Object.entries(grouped).map(([domain, rows]) => <details>
+      <summary>{domain} <span>{rows.length}</span></summary>
+      <div class="finding-list">{rows.map((f) => <article class="finding">
+        <h3>{f.evidence_property || f.method_or_statistic || 'Finding'}</h3>
+        <p>{f.result_summary || f.direction_or_interpretation || f.numerical_result}</p>
+        {f.numerical_result && f.result_summary && <p class="metric">{f.numerical_result}</p>}
+        <dl class="mini-dl">
+          {f.sample_population && <><dt>Population</dt><dd>{f.sample_population}</dd></>}
+          {f.study_design && <><dt>Design</dt><dd>{f.study_design}</dd></>}
+          {f.limitations_or_caveats && <><dt>Limits</dt><dd>{f.limitations_or_caveats}</dd></>}
+        </dl>
+      </article>)}</div>
+    </details>)}
+  </div>
+</section>}

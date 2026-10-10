@@ -1,0 +1,14 @@
+---
+const { spec } = Astro.props;
+const split = (v) => String(v || '').split(';').map((x) => x.trim()).filter(Boolean);
+---
+{spec && <section class="panel spec-panel" aria-labelledby="spec-heading">
+  <div class="section-kicker">Configuration matters</div>
+  <h2 id="spec-heading">What needs to be specified?</h2>
+  <p>{spec.purpose}</p>
+  <div class="spec-grid">
+    <div><h3>Record explicitly</h3><ul>{split(spec.required_specification_fields).map((x) => <li>{x}</li>)}</ul></div>
+    <div><h3>Interpret with care</h3><ul>{split(spec.evidence_interpretation_fields || spec.trustworthiness_interpretation_fields).map((x) => <li>{x}</li>)}</ul></div>
+  </div>
+  <p class="callout"><strong>Public display principle:</strong> {spec.public_display_principle}</p>
+</section>}

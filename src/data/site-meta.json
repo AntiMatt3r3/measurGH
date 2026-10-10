@@ -1,0 +1,38 @@
+{
+  "title": "MeasureGH",
+  "subtitle": "The Gambling Harms Measurement Toolkit",
+  "version": "Prototype V3",
+  "sourceWorkbook": "P1C-B Evidence Characterisation Workbook v1.6 — P1C-B0 Calibration Closed",
+  "identityAuthority": "P1C-A Locked Canonical Register v1.3",
+  "calibrationComplete": 23,
+  "eligibleObjects": 446,
+  "publicFamilies": 44,
+  "constructs": 163,
+  "approaches": [
+    {
+      "name": "Instruments",
+      "count": 348,
+      "calibrated": 5
+    },
+    {
+      "name": "Assessments",
+      "count": 33,
+      "calibrated": 5
+    },
+    {
+      "name": "Methods & protocols",
+      "count": 12,
+      "calibrated": 5
+    },
+    {
+      "name": "Indicators & metrics",
+      "count": 50,
+      "calibrated": 5
+    },
+    {
+      "name": "Qualitative & participatory approaches",
+      "count": 3,
+      "calibrated": 3
+    }
+  ]
+}

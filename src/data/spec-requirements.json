@@ -1,0 +1,164 @@
+{
+  "methods": [
+    {
+      "manifest_id": "MSPEC-001",
+      "method_archetype": "Retrospective reconstruction method",
+      "calibration_exemplar": "Gambling Timeline Followback",
+      "status": "DEFER_TO_SCHEMA_FREEZE",
+      "purpose": "Describe exactly what period and behaviours are reconstructed and how daily/event information becomes outputs.",
+      "required_specification_fields": "reference/recall window; temporal anchors; event/calendar aids; reconstructed unit; respondent/perspective; administration mode; input variables; output variables; aggregation rule",
+      "evidence_interpretation_fields": "repeatability; recall bias; comparison/reference source; missing-day handling; burden",
+      "public_display_principle": "Show procedure/configuration before evidence; do not imply one scale total.",
+      "production_schema_action": "Add type-specific fields after all five public approaches are calibrated.",
+      "source_issue_ids": "P1CB-ISSUE-000042"
+    },
+    {
+      "manifest_id": "MSPEC-002",
+      "method_archetype": "Analytical / health-economic estimation method",
+      "calibration_exemplar": "Population-level attributable-fraction estimation of gambling-related harm costs",
+      "status": "DEFER_TO_SCHEMA_FREEZE",
+      "purpose": "Make the estimand, counterfactual and economic assumptions explicit enough to interpret attributable/excess burden estimates.",
+      "required_specification_fields": "estimand/output; causal/associational status; comparator/counterfactual; exposure definition; effect/risk input; population denominator; perspective; cost domains; price year/currency; time horizon; valuation method; uncertainty/sensitivity; overlap/double-counting rule",
+      "evidence_interpretation_fields": "causal assumptions; parameter provenance; uncertainty propagation; sensitivity; omitted harms/transfers; comparability",
+      "public_display_principle": "Name the exact output; never collapse causal PAF, excess cases and monetised excess cost into one label.",
+      "production_schema_action": "Add type-specific fields after all five public approaches are calibrated.",
+      "source_issue_ids": "P1CB-ISSUE-000044; P1CB-ISSUE-000045"
+    },
+    {
+      "manifest_id": "MSPEC-003",
+      "method_archetype": "Measurement / elicitation method",
+      "calibration_exemplar": "Visual analogue scale response method",
+      "status": "DEFER_TO_SCHEMA_FREEZE",
+      "purpose": "Represent each VAS application as a configured elicitation procedure rather than a universal fixed instrument.",
+      "required_specification_fields": "exact prompt/construct; lower/upper anchors; scale/line length and orientation; visible numeric labels; reference window; device/interface; initial marker/default; response capture; score transformation",
+      "evidence_interpretation_fields": "format comparability; reliability context; electronic migration; change interpretation; missingness/burden",
+      "public_display_principle": "Generic VAS stays CONFIGURABLE; evidence for one construct/application does not validate all VAS uses.",
+      "production_schema_action": "Add reusable configuration block after all five public approaches are calibrated.",
+      "source_issue_ids": "P1CB-ISSUE-000046"
+    },
+    {
+      "manifest_id": "MSPEC-004",
+      "method_archetype": "Composite measurement / evaluation package",
+      "calibration_exemplar": "Gambling Treatment Outcome Monitoring System",
+      "status": "DEFER_TO_SCHEMA_FREEZE",
+      "purpose": "Show package composition and evidence by component, version and assessment time point.",
+      "required_specification_fields": "package version; component/form; time point; respondent; administration mode; recall/window; component output; scoring; service/process data element; current/manual status",
+      "evidence_interpretation_fields": "which component/property was evaluated; sample/cohort; missing/proxy data; package-level versus component-level evidence",
+      "public_display_principle": "Never publish a single package coefficient when evidence is component/time-point specific.",
+      "production_schema_action": "Add component × version × time-point manifest after all five public approaches are calibrated.",
+      "source_issue_ids": "P1CB-ISSUE-000047; P1CB-ISSUE-000048"
+    },
+    {
+      "manifest_id": "MSPEC-005",
+      "method_archetype": "Relational / systems method",
+      "calibration_exemplar": "Social network analysis",
+      "status": "DEFER_TO_SCHEMA_FREEZE",
+      "purpose": "Expose the relational design choices that determine what a network measure means and whether results are comparable.",
+      "required_specification_fields": "actor/node set; network boundary; tie definition/semantics; directed/undirected; binary/weighted; ego/whole-network; temporal window/dynamic design; nomination limits; missingness/reconciliation; transformations; metric definition/normalisation; software/code/version",
+      "evidence_interpretation_fields": "relationship-report reliability; ascertainment/sampling; missing ties; metric sensitivity; temporal aggregation; causal/confounding limits; reproducibility; confidentiality/burden",
+      "public_display_principle": "Construct target remains social-network structure; configuration choices and application constructs are separate.",
+      "production_schema_action": "Add relational specification block after all five public approaches are calibrated.",
+      "source_issue_ids": "P1CB-ISSUE-000049; P1CB-ISSUE-000050; P1CB-ISSUE-000051"
+    }
+  ],
+  "indicators": [
+    {
+      "manifest_id": "ISPEC-001",
+      "indicator_archetype": "Financial / expenditure indicator",
+      "calibration_exemplar": "Net money lost from gambling",
+      "status": "DEFER_TO_SCHEMA_FREEZE",
+      "purpose": "Make accounting conventions explicit so numerically similar financial indicators are not treated as interchangeable.",
+      "required_specification_fields": "formula/estimand; sign convention; currency/price basis; observation window; unit/aggregation; products/accounts covered; data source; bonuses/free bets; cash-outs; refunds/reversals; transfers; unsettled bets; balances",
+      "evidence_interpretation_fields": "self-report/record agreement; recall/estimation bias; missing coverage; skew/outliers; source comparability; relationship to harm/affordability",
+      "public_display_principle": "Name the financial quantity exactly; expenditure/loss is not automatically financial harm, affordability or disorder.",
+      "production_schema_action": "Add type-specific fields after all five public approaches are calibrated.",
+      "source_issue_ids": "P1CB-ISSUE-000052"
+    },
+    {
+      "manifest_id": "ISPEC-002",
+      "indicator_archetype": "Service / process rate",
+      "calibration_exemplar": "Treatment dropout rate",
+      "status": "DEFER_TO_SCHEMA_FREEZE",
+      "purpose": "Make the denominator, episode and exit rules explicit before comparing rates across services.",
+      "required_specification_fields": "eligible cohort; treatment-start/engagement rule; expected endpoint; numerator/dropout definition; patient/service initiation; reporting period; episode construction; censoring; transfers; planned early completion; pauses/re-entry; deaths; administrative discharge; lost follow-up",
+      "evidence_interpretation_fields": "coding completeness/reliability; denominator sensitivity; censoring; cross-service comparability; reason-for-exit uncertainty",
+      "public_display_principle": "A dropout rate is a process indicator; lower is not automatically better care and the rate alone does not explain why people leave.",
+      "production_schema_action": "Add type-specific fields after all five public approaches are calibrated.",
+      "source_issue_ids": "P1CB-ISSUE-000053"
+    },
+    {
+      "manifest_id": "ISPEC-003",
+      "indicator_archetype": "Administrative / transactional indicator",
+      "calibration_exemplar": "Bank-transaction-derived gambling merchant outflow",
+      "status": "DEFER_TO_SCHEMA_FREEZE",
+      "purpose": "Expose transaction coverage and merchant-classification choices that determine the observed outflow.",
+      "required_specification_fields": "observation window; gross/net direction; bank/provider coverage; connected-account coverage; merchant mapping/version; intermediaries; card/account types; currency; posting date; refunds/reversals; deduplication; audit/error checks; cash/other-channel omissions",
+      "evidence_interpretation_fields": "classification error; missing merchants/accounts; mapping drift; reproducibility; cross-provider comparability; distinction from net deposits/loss/harm",
+      "public_display_principle": "Show gross merchant outflow as its own estimand; do not collapse it with debit-minus-credit net deposits.",
+      "production_schema_action": "Add transactional-indicator manifest after all five public approaches are calibrated.",
+      "source_issue_ids": "P1CB-ISSUE-000054; P1CB-ISSUE-000055"
+    },
+    {
+      "manifest_id": "ISPEC-004",
+      "indicator_archetype": "Geographic / environmental indicator",
+      "calibration_exemplar": "English Index of Multiple Deprivation",
+      "status": "DEFER_TO_SCHEMA_FREEZE",
+      "purpose": "Make edition, geography and linkage choices explicit for area-context indicators.",
+      "required_specification_fields": "edition/release; component/domain identity; input-data years; geography level/code/vintage; lookup/remapping version; score/rank/decile direction; national/local/population grouping; larger-area aggregation",
+      "evidence_interpretation_fields": "edition comparability; boundary change; ecological interpretation; individual-versus-area distinction; covariate/domain overlap",
+      "public_display_principle": "Present IMD as relative area deprivation, not an individual socioeconomic score.",
+      "production_schema_action": "Add area-indicator manifest after all five public approaches are calibrated.",
+      "source_issue_ids": "P1CB-ISSUE-000056"
+    },
+    {
+      "manifest_id": "ISPEC-005",
+      "indicator_archetype": "Health-economic / burden metric",
+      "calibration_exemplar": "Quality-adjusted life year",
+      "status": "DEFER_TO_SCHEMA_FREEZE",
+      "purpose": "Expose the utility, time, comparator and modelling assumptions needed to interpret a QALY quantity.",
+      "required_specification_fields": "utility instrument/version; value set/population; measurement schedule; interpolation; survival/death handling; output type; comparator/sign; horizon; discounting; baseline adjustment; missing-data method; observed versus modelled/projected/attributed status",
+      "evidence_interpretation_fields": "utility-input comparability; uncertainty/sensitivity; mortality; negative values; attribution/counterfactual assumptions; observed versus modelled QALYs",
+      "public_display_principle": "Separate QALY from the utility instrument/value set used as input; different utility systems are not automatically interchangeable.",
+      "production_schema_action": "Add health-economic metric manifest after all five public approaches are calibrated.",
+      "source_issue_ids": "P1CB-ISSUE-000057; P1CB-ISSUE-000058"
+    }
+  ],
+  "qualitative": [
+    {
+      "manifest_id": "QSPEC-001",
+      "qualitative_archetype": "Narrative / change method",
+      "calibration_exemplar": "Most Significant Change recovery narrative",
+      "status": "DEFER_TO_SCHEMA_FREEZE",
+      "purpose": "Describe the local MSC implementation without implying that generic MSC guidance defines a fixed gambling-recovery protocol.",
+      "required_specification_fields": "method label; application/domain; story prompt(s); reporting period; recruitment/sampling; storyteller perspective; panel composition; selection procedure; selection reasons; negative/disconfirming stories; verification/member checking; consent/confidentiality; translation; feedback cycle; reporting/use",
+      "trustworthiness_interpretation_fields": "voice/representation; selection bias; reflexivity; transparency; verification; inclusion/equity; burden; triangulation; transferability",
+      "public_display_principle": "Public label should foreground Most Significant Change (MSC); recovery narrative should be shown as the configured application unless a fixed recovery protocol is later sourced.",
+      "production_schema_action": "Add narrative-procedure manifest after Website V3 adjudication.",
+      "source_issue_ids": "P1CB-ISSUE-000059"
+    },
+    {
+      "manifest_id": "QSPEC-002",
+      "qualitative_archetype": "Participatory / systems-mapping method",
+      "calibration_exemplar": "Group model building",
+      "status": "DEFER_TO_SCHEMA_FREEZE",
+      "purpose": "Expose who participated, how the model was elicited and revised, and what epistemic status the resulting model has.",
+      "required_specification_fields": "stakeholder groups; recruitment; absent voices; facilitator/modeller roles; script/exercise/version; session count/duration; materials/software; data capture; model/output type; disagreement handling; revision/validation cycle; documentation/audit trail; later empirical/simulation testing",
+      "trustworthiness_interpretation_fields": "participation/inclusion; power; facilitation dependence; transparency; credibility; reproducibility/transferability; feasibility/resources; distinction between shared hypothesis and empirical causal validation",
+      "public_display_principle": "Show the generated map/model as a documented participatory output, not as a validated causal model merely because participants agreed.",
+      "production_schema_action": "Add participatory-method configuration/audit manifest after Website V3 adjudication.",
+      "source_issue_ids": "P1CB-ISSUE-000060"
+    },
+    {
+      "manifest_id": "QSPEC-003",
+      "qualitative_archetype": "Qualitative case-study / life-course costing",
+      "calibration_exemplar": "Individual life-course social-cost case-study method",
+      "status": "DEFER_TO_SCHEMA_FREEZE",
+      "purpose": "Make the case boundary, evidence trail and economic attribution transparent enough to distinguish narrative, observed use and modelled costs.",
+      "required_specification_fields": "case-selection rationale; respondent perspectives; life-course/time boundary; narrative source; record/collateral sources; conflicting-account reconciliation; observed resource quantities; imputed quantities; cost categories; valuation source; currency/price year; perspective; horizon; discounting; transfers/double counting; attribution rule; counterfactual/modelled elements; missing/unobservable costs",
+      "trustworthiness_interpretation_fields": "triangulation; recall/reconstruction bias; researcher judgement; attribution uncertainty; confidentiality/identifiability; burden; transferability; non-generalisation from individual case to population burden",
+      "public_display_principle": "Display a timeline/evidence/cost ledger; individual case estimates are illustrative/analytic cases, not population averages or causal burden estimates.",
+      "production_schema_action": "Add case/timeline/cost-provenance manifest after Website V3 adjudication.",
+      "source_issue_ids": "P1CB-ISSUE-000061"
+    }
+  ]
+}

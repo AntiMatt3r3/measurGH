@@ -1,0 +1,17 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ApproachBadge from '@/components/ApproachBadge.astro';
+import siteMeta from '@/data/site-meta.json';
+import { withBase } from '@/lib/utils';
+const copy={
+  'Instruments':'Questionnaires, scales, observer ratings and behavioural tasks with a defined response or scoring procedure.',
+  'Assessments':'Diagnostic criteria, interviews and structured clinical or multi-domain assessment processes.',
+  'Methods & protocols':'Reproducible procedures for eliciting, reconstructing, analysing or evaluating information.',
+  'Indicators & metrics':'Observed or calculated quantities such as financial loss, service rates, area measures or QALYs.',
+  'Qualitative & participatory approaches':'Structured approaches for narratives, systems mapping and in-depth case reconstruction.'
+};
+---
+<BaseLayout title="Ways to measure">
+  <section class="page-head"><div class="eyebrow">Ways to measure</div><h1>Five approaches, one evidence framework.</h1><p class="lede">Different measurement jobs require different kinds of evidence. MeasureGH keeps those differences visible.</p></section>
+  <div class="way-list">{siteMeta.approaches.map((a,i) => <article class="way-card"><div class="way-number">0{i+1}</div><div><ApproachBadge approach={a.name}/><h2>{a.name}</h2><p>{copy[a.name]}</p><p class="muted">{a.count} mapped objects · {a.calibrated} evidence-rich calibration examples</p><a class="button secondary" href={withBase(`browse/?approach=${encodeURIComponent(a.name)}`)}>Browse {a.name.toLowerCase()}</a></div></article>)}</div>
+</BaseLayout>

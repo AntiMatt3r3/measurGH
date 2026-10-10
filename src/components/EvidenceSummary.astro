@@ -1,0 +1,13 @@
+---
+const { synthesis, status } = Astro.props;
+const line = synthesis?.evidence_currently_identified_line;
+---
+<section class="evidence-summary panel" aria-labelledby="evidence-heading">
+  <div class="section-kicker">Evidence currently identified</div>
+  <h2 id="evidence-heading">What does the evidence tell us?</h2>
+  {line ? <p class="evidence-line">{line}</p> : <p class="muted">Evidence characterisation has not yet been completed for this record.</p>}
+  {synthesis?.public_evidence_narrative && String(synthesis.public_evidence_narrative).split(/
+\s*
+/).map((p) => <p>{p}</p>)}
+  {!line && status?.work_status !== 'COMPLETE' && <p class="notice">This page currently shows identity and mapping information only. Evidence characterisation will be added during P1C-B1 production.</p>}
+</section>

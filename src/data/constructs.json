@@ -1,0 +1,1632 @@
+[
+  {
+    "construct_id": "C0102",
+    "preferred_label": "Affected-other gambling harm",
+    "domain_id": "CD01",
+    "domain_label": "Harm and consequences",
+    "plain_language_definition": "Harms experienced by someone affected by another person’s gambling.",
+    "search_aliases": "affected other harm; concerned significant other harm; family harm",
+    "status": "ACTIVE",
+    "linked_objects": 9
+  },
+  {
+    "construct_id": "C0105",
+    "preferred_label": "Emotional or psychological harm",
+    "domain_id": "CD01",
+    "domain_label": "Harm and consequences",
+    "plain_language_definition": "Emotional or psychological adverse consequences attributable to gambling.",
+    "search_aliases": "emotional harm; psychological harm",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C0103",
+    "preferred_label": "Financial harm",
+    "domain_id": "CD01",
+    "domain_label": "Harm and consequences",
+    "plain_language_definition": "Financial hardship or adverse financial consequences attributable to gambling.",
+    "search_aliases": "financial consequences; money problems; financial damage",
+    "status": "ACTIVE",
+    "linked_objects": 7
+  },
+  {
+    "construct_id": "C0109",
+    "preferred_label": "Gambling-related stigma",
+    "domain_id": "CD01",
+    "domain_label": "Harm and consequences",
+    "plain_language_definition": "Experienced or perceived stigma associated with gambling problems or harms.",
+    "search_aliases": "stigma; perceived stigma; experienced stigma",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C0106",
+    "preferred_label": "Health harm",
+    "domain_id": "CD01",
+    "domain_label": "Harm and consequences",
+    "plain_language_definition": "Adverse physical or mental health consequences attributable to gambling.",
+    "search_aliases": "health consequences; health impact",
+    "status": "ACTIVE",
+    "linked_objects": 5
+  },
+  {
+    "construct_id": "C0108",
+    "preferred_label": "Legal or crime-related harm",
+    "domain_id": "CD01",
+    "domain_label": "Harm and consequences",
+    "plain_language_definition": "Legal/criminal consequences attributable to gambling.",
+    "search_aliases": "legal harm; crime consequences",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C0110",
+    "preferred_label": "Negative consequences",
+    "domain_id": "CD01",
+    "domain_label": "Harm and consequences",
+    "plain_language_definition": "Broad adverse consequences of an addictive behaviour when a more specific domain is not fixed.",
+    "search_aliases": "adverse consequences; problems; consequences",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C0101",
+    "preferred_label": "Overall gambling-related harm",
+    "domain_id": "CD01",
+    "domain_label": "Harm and consequences",
+    "plain_language_definition": "Overall severity or burden of adverse consequences attributable to gambling.",
+    "search_aliases": "gambling harm; harms; gambling-related consequences",
+    "status": "ACTIVE",
+    "linked_objects": 18
+  },
+  {
+    "construct_id": "C0104",
+    "preferred_label": "Relationship harm",
+    "domain_id": "CD01",
+    "domain_label": "Harm and consequences",
+    "plain_language_definition": "Harm to intimate, family or other relationships attributable to gambling.",
+    "search_aliases": "relationship consequences; family relationship harm",
+    "status": "ACTIVE",
+    "linked_objects": 5
+  },
+  {
+    "construct_id": "C0107",
+    "preferred_label": "Work or study harm",
+    "domain_id": "CD01",
+    "domain_label": "Harm and consequences",
+    "plain_language_definition": "Adverse consequences for employment, work or education attributable to gambling.",
+    "search_aliases": "work harm; employment harm; study harm; education harm",
+    "status": "ACTIVE",
+    "linked_objects": 4
+  },
+  {
+    "construct_id": "C0207",
+    "preferred_label": "Gambling abstinence",
+    "domain_id": "CD02",
+    "domain_label": "Gambling behaviour and engagement",
+    "plain_language_definition": "Absence of gambling over a defined period.",
+    "search_aliases": "abstinence; no gambling",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C0202",
+    "preferred_label": "Gambling frequency",
+    "domain_id": "CD02",
+    "domain_label": "Gambling behaviour and engagement",
+    "plain_language_definition": "How often gambling occurs.",
+    "search_aliases": "frequency; gambling days; episodes",
+    "status": "ACTIVE",
+    "linked_objects": 15
+  },
+  {
+    "construct_id": "C0205",
+    "preferred_label": "Gambling intensity",
+    "domain_id": "CD02",
+    "domain_label": "Gambling behaviour and engagement",
+    "plain_language_definition": "Intensity/volume of gambling activity not reducible to expenditure alone.",
+    "search_aliases": "intensity; high-intensity gambling",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C0209",
+    "preferred_label": "Gambling limit setting",
+    "domain_id": "CD02",
+    "domain_label": "Gambling behaviour and engagement",
+    "plain_language_definition": "Use of voluntary limits or other self-limiting behaviour.",
+    "search_aliases": "limit setting; limits; self-limits",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0201",
+    "preferred_label": "Gambling participation",
+    "domain_id": "CD02",
+    "domain_label": "Gambling behaviour and engagement",
+    "plain_language_definition": "Whether or extent to which a person takes part in gambling.",
+    "search_aliases": "participation; gambling involvement",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C0206",
+    "preferred_label": "Gambling product involvement",
+    "domain_id": "CD02",
+    "domain_label": "Gambling behaviour and engagement",
+    "plain_language_definition": "Types/range of gambling products or activities used.",
+    "search_aliases": "activities; product involvement; gambling types",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C0208",
+    "preferred_label": "Gambling relapse",
+    "domain_id": "CD02",
+    "domain_label": "Gambling behaviour and engagement",
+    "plain_language_definition": "Return to gambling following abstinence/recovery.",
+    "search_aliases": "relapse; recurrence",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0203",
+    "preferred_label": "Gambling sessions or episodes",
+    "domain_id": "CD02",
+    "domain_label": "Gambling behaviour and engagement",
+    "plain_language_definition": "Number or pattern of discrete gambling sessions/episodes.",
+    "search_aliases": "sessions; episodes",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C0210",
+    "preferred_label": "Gambling venue attendance",
+    "domain_id": "CD02",
+    "domain_label": "Gambling behaviour and engagement",
+    "plain_language_definition": "Attendance/visits to gambling venues.",
+    "search_aliases": "casino attendance; venue visits; racino attendance",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C0204",
+    "preferred_label": "Time spent gambling",
+    "domain_id": "CD02",
+    "domain_label": "Gambling behaviour and engagement",
+    "plain_language_definition": "Duration/time allocated to gambling.",
+    "search_aliases": "duration; time gambling; session duration",
+    "status": "ACTIVE",
+    "linked_objects": 4
+  },
+  {
+    "construct_id": "C0303",
+    "preferred_label": "Amount wagered or staked",
+    "domain_id": "CD03",
+    "domain_label": "Gambling expenditure and financial activity",
+    "plain_language_definition": "Gross amount wagered/staked.",
+    "search_aliases": "amount bet; stakes; wagering",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C0307",
+    "preferred_label": "Gambling debt",
+    "domain_id": "CD03",
+    "domain_label": "Gambling expenditure and financial activity",
+    "plain_language_definition": "Debt attributable to gambling.",
+    "search_aliases": "gambling-related debt; debt",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C0304",
+    "preferred_label": "Gambling deposits",
+    "domain_id": "CD03",
+    "domain_label": "Gambling expenditure and financial activity",
+    "plain_language_definition": "Money deposited into gambling accounts or for gambling.",
+    "search_aliases": "deposits; amount deposited",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0301",
+    "preferred_label": "Gambling expenditure",
+    "domain_id": "CD03",
+    "domain_label": "Gambling expenditure and financial activity",
+    "plain_language_definition": "Amount spent on gambling over a defined period.",
+    "search_aliases": "spend; expenditure; gambling spending",
+    "status": "ACTIVE",
+    "linked_objects": 12
+  },
+  {
+    "construct_id": "C0305",
+    "preferred_label": "Gambling expenditure per session or day",
+    "domain_id": "CD03",
+    "domain_label": "Gambling expenditure and financial activity",
+    "plain_language_definition": "Gambling expenditure standardised to a session/day.",
+    "search_aliases": "spend per session; spend per gambling day",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C0306",
+    "preferred_label": "Gambling expenditure relative to income",
+    "domain_id": "CD03",
+    "domain_label": "Gambling expenditure and financial activity",
+    "plain_language_definition": "Gambling expenditure/loss expressed relative to income.",
+    "search_aliases": "percentage of income; spend-to-income; loss-to-income",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C0302",
+    "preferred_label": "Net gambling loss",
+    "domain_id": "CD03",
+    "domain_label": "Gambling expenditure and financial activity",
+    "plain_language_definition": "Stakes/expenditure net of returns/winnings.",
+    "search_aliases": "net loss; money lost",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0403",
+    "preferred_label": "Gambling diagnostic criteria count",
+    "domain_id": "CD04",
+    "domain_label": "Gambling severity and disorder",
+    "plain_language_definition": "Number of gambling-disorder/pathological-gambling criteria met.",
+    "search_aliases": "criteria count; symptom count",
+    "status": "ACTIVE",
+    "linked_objects": 8
+  },
+  {
+    "construct_id": "C0402",
+    "preferred_label": "Gambling disorder status",
+    "domain_id": "CD04",
+    "domain_label": "Gambling severity and disorder",
+    "plain_language_definition": "Diagnostic/case status for gambling disorder/pathological gambling.",
+    "search_aliases": "gambling disorder; pathological gambling; diagnosis; case status",
+    "status": "ACTIVE",
+    "linked_objects": 21
+  },
+  {
+    "construct_id": "C0404",
+    "preferred_label": "Gambling symptom severity",
+    "domain_id": "CD04",
+    "domain_label": "Gambling severity and disorder",
+    "plain_language_definition": "Severity/frequency of gambling-disorder symptoms.",
+    "search_aliases": "symptom severity; gambling symptoms",
+    "status": "ACTIVE",
+    "linked_objects": 6
+  },
+  {
+    "construct_id": "C0405",
+    "preferred_label": "Problem gambling case screening",
+    "domain_id": "CD04",
+    "domain_label": "Gambling severity and disorder",
+    "plain_language_definition": "Brief classification/screening for likely problem/disordered gambling.",
+    "search_aliases": "screen; case finding; problem gambling screen",
+    "status": "ACTIVE",
+    "linked_objects": 23
+  },
+  {
+    "construct_id": "C0401",
+    "preferred_label": "Problem gambling severity",
+    "domain_id": "CD04",
+    "domain_label": "Gambling severity and disorder",
+    "plain_language_definition": "Continuum of problem-gambling severity/risk.",
+    "search_aliases": "problem gambling; severity; PG severity",
+    "status": "ACTIVE",
+    "linked_objects": 34
+  },
+  {
+    "construct_id": "C0501",
+    "preferred_label": "Gambling craving",
+    "domain_id": "CD05",
+    "domain_label": "Craving, urges and perceived control",
+    "plain_language_definition": "Craving/desire to gamble.",
+    "search_aliases": "craving; desire to gamble",
+    "status": "ACTIVE",
+    "linked_objects": 8
+  },
+  {
+    "construct_id": "C0502",
+    "preferred_label": "Gambling urge intensity",
+    "domain_id": "CD05",
+    "domain_label": "Craving, urges and perceived control",
+    "plain_language_definition": "Intensity of urge to gamble.",
+    "search_aliases": "urge; urge intensity",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0503",
+    "preferred_label": "Perceived gambling control",
+    "domain_id": "CD05",
+    "domain_label": "Craving, urges and perceived control",
+    "plain_language_definition": "Perceived ability/control to resist or regulate gambling.",
+    "search_aliases": "control; perceived control; loss of control",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0504",
+    "preferred_label": "Situational gambling temptation or triggers",
+    "domain_id": "CD05",
+    "domain_label": "Craving, urges and perceived control",
+    "plain_language_definition": "Situations/cues that elicit temptation or risk of gambling.",
+    "search_aliases": "triggers; high-risk situations; temptation",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C0602",
+    "preferred_label": "Gambler’s fallacy",
+    "domain_id": "CD06",
+    "domain_label": "Gambling cognitions, beliefs and expectancies",
+    "plain_language_definition": "Belief that random outcomes are self-correcting/predictable from recent outcomes.",
+    "search_aliases": "gambler fallacy; fallacies",
+    "status": "ACTIVE",
+    "linked_objects": 5
+  },
+  {
+    "construct_id": "C0605",
+    "preferred_label": "Gambling beliefs and attitudes",
+    "domain_id": "CD06",
+    "domain_label": "Gambling cognitions, beliefs and expectancies",
+    "plain_language_definition": "General gambling-specific beliefs/attitudes not more narrowly classified.",
+    "search_aliases": "gambling beliefs; attitudes toward gambling",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C0601",
+    "preferred_label": "Gambling cognitive distortions",
+    "domain_id": "CD06",
+    "domain_label": "Gambling cognitions, beliefs and expectancies",
+    "plain_language_definition": "Erroneous or biased gambling-related cognitions.",
+    "search_aliases": "cognitive distortions; biased beliefs",
+    "status": "ACTIVE",
+    "linked_objects": 8
+  },
+  {
+    "construct_id": "C0604",
+    "preferred_label": "Gambling expectancies",
+    "domain_id": "CD06",
+    "domain_label": "Gambling cognitions, beliefs and expectancies",
+    "plain_language_definition": "Expected positive/negative outcomes or effects of gambling.",
+    "search_aliases": "expectancies; outcome expectancies",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C0609",
+    "preferred_label": "Gambling information-processing bias",
+    "domain_id": "CD06",
+    "domain_label": "Gambling cognitions, beliefs and expectancies",
+    "plain_language_definition": "Biases in interpretation/processing of gambling information.",
+    "search_aliases": "informational bias; cognitive bias",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0606",
+    "preferred_label": "Gambling metacognitions",
+    "domain_id": "CD06",
+    "domain_label": "Gambling cognitions, beliefs and expectancies",
+    "plain_language_definition": "Beliefs about one’s own gambling-related thoughts/cognitions.",
+    "search_aliases": "metacognitions about gambling",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0603",
+    "preferred_label": "Illusion of control",
+    "domain_id": "CD06",
+    "domain_label": "Gambling cognitions, beliefs and expectancies",
+    "plain_language_definition": "Overestimation of personal control over gambling outcomes.",
+    "search_aliases": "illusion of control; control beliefs",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C0608",
+    "preferred_label": "Perceived gambling profitability",
+    "domain_id": "CD06",
+    "domain_label": "Gambling cognitions, beliefs and expectancies",
+    "plain_language_definition": "Beliefs/attitudes about gambling profitability or expected financial return.",
+    "search_aliases": "profitability; gambling profitable",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0703",
+    "preferred_label": "Gambling self-efficacy",
+    "domain_id": "CD07",
+    "domain_label": "Motivation, self-efficacy and recovery",
+    "plain_language_definition": "Confidence in ability to resist/control gambling or maintain change.",
+    "search_aliases": "self efficacy; refusal self-efficacy; abstinence confidence",
+    "status": "ACTIVE",
+    "linked_objects": 5
+  },
+  {
+    "construct_id": "C0707",
+    "preferred_label": "Goal attainment",
+    "domain_id": "CD07",
+    "domain_label": "Motivation, self-efficacy and recovery",
+    "plain_language_definition": "Achievement of individually defined treatment/recovery goals.",
+    "search_aliases": "goal attainment; goals",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C0706",
+    "preferred_label": "Help-seeking intention",
+    "domain_id": "CD07",
+    "domain_label": "Motivation, self-efficacy and recovery",
+    "plain_language_definition": "Intentions/reasons/readiness to seek help.",
+    "search_aliases": "help seeking intention; reasons for help seeking",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C0702",
+    "preferred_label": "Motivation to change or recover",
+    "domain_id": "CD07",
+    "domain_label": "Motivation, self-efficacy and recovery",
+    "plain_language_definition": "Motivation/treatment eagerness to change problematic behaviour.",
+    "search_aliases": "motivation; treatment eagerness",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C0708",
+    "preferred_label": "Mutual-help involvement",
+    "domain_id": "CD07",
+    "domain_label": "Motivation, self-efficacy and recovery",
+    "plain_language_definition": "Involvement/participation in mutual-help or recovery-support groups.",
+    "search_aliases": "mutual help; AA involvement; recovery-group involvement",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C0701",
+    "preferred_label": "Readiness to change",
+    "domain_id": "CD07",
+    "domain_label": "Motivation, self-efficacy and recovery",
+    "plain_language_definition": "Readiness/stage of change for changing addictive behaviour.",
+    "search_aliases": "readiness; stages of change",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0705",
+    "preferred_label": "Recovery capital",
+    "domain_id": "CD07",
+    "domain_label": "Motivation, self-efficacy and recovery",
+    "plain_language_definition": "Personal/social resources supporting recovery.",
+    "search_aliases": "recovery capital; recovery resources",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0704",
+    "preferred_label": "Recovery progress",
+    "domain_id": "CD07",
+    "domain_label": "Motivation, self-efficacy and recovery",
+    "plain_language_definition": "Progress/state of recovery from gambling problems.",
+    "search_aliases": "recovery; recovery progress",
+    "status": "ACTIVE",
+    "linked_objects": 6
+  },
+  {
+    "construct_id": "C0807",
+    "preferred_label": "Anger or hostility",
+    "domain_id": "CD08",
+    "domain_label": "Mental health and psychological distress",
+    "plain_language_definition": "Anger, aggression propensity or hostility.",
+    "search_aliases": "anger; hostility",
+    "status": "ACTIVE",
+    "linked_objects": 5
+  },
+  {
+    "construct_id": "C0802",
+    "preferred_label": "Anxiety",
+    "domain_id": "CD08",
+    "domain_label": "Mental health and psychological distress",
+    "plain_language_definition": "Anxiety symptoms/severity.",
+    "search_aliases": "anxiety symptoms; anxiety severity",
+    "status": "ACTIVE",
+    "linked_objects": 12
+  },
+  {
+    "construct_id": "C0801",
+    "preferred_label": "Depression",
+    "domain_id": "CD08",
+    "domain_label": "Mental health and psychological distress",
+    "plain_language_definition": "Depressive symptoms/severity.",
+    "search_aliases": "depressive symptoms; depression severity",
+    "status": "ACTIVE",
+    "linked_objects": 20
+  },
+  {
+    "construct_id": "C0811",
+    "preferred_label": "Dissociation",
+    "domain_id": "CD08",
+    "domain_label": "Mental health and psychological distress",
+    "plain_language_definition": "Dissociative experiences/symptoms.",
+    "search_aliases": "dissociation; dissociative symptoms",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0812",
+    "preferred_label": "Emotion dysregulation or reactivity",
+    "domain_id": "CD08",
+    "domain_label": "Mental health and psychological distress",
+    "plain_language_definition": "Difficulty regulating/reactivity of emotion.",
+    "search_aliases": "emotion regulation; emotional reactivity; affective lability",
+    "status": "ACTIVE",
+    "linked_objects": 10
+  },
+  {
+    "construct_id": "C0813",
+    "preferred_label": "Hopelessness or hopefulness",
+    "domain_id": "CD08",
+    "domain_label": "Mental health and psychological distress",
+    "plain_language_definition": "Hope/hopelessness as psychological state.",
+    "search_aliases": "hope; hopelessness",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0808",
+    "preferred_label": "Mania",
+    "domain_id": "CD08",
+    "domain_label": "Mental health and psychological distress",
+    "plain_language_definition": "Manic symptoms/severity.",
+    "search_aliases": "mania; manic symptoms",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0809",
+    "preferred_label": "Mood and affect",
+    "domain_id": "CD08",
+    "domain_label": "Mental health and psychological distress",
+    "plain_language_definition": "Mood/positive-negative affect when not a specific disorder.",
+    "search_aliases": "mood; affect; affect balance",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C0810",
+    "preferred_label": "Psychiatric symptom burden",
+    "domain_id": "CD08",
+    "domain_label": "Mental health and psychological distress",
+    "plain_language_definition": "Broad psychiatric/psychopathology symptom burden.",
+    "search_aliases": "psychiatric symptoms; psychopathology; global symptoms",
+    "status": "ACTIVE",
+    "linked_objects": 23
+  },
+  {
+    "construct_id": "C0803",
+    "preferred_label": "Psychological distress",
+    "domain_id": "CD08",
+    "domain_label": "Mental health and psychological distress",
+    "plain_language_definition": "General psychological/mental distress.",
+    "search_aliases": "distress; mental distress",
+    "status": "ACTIVE",
+    "linked_objects": 6
+  },
+  {
+    "construct_id": "C0804",
+    "preferred_label": "Stress",
+    "domain_id": "CD08",
+    "domain_label": "Mental health and psychological distress",
+    "plain_language_definition": "Perceived or symptomatic stress.",
+    "search_aliases": "perceived stress; stress symptoms",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C0805",
+    "preferred_label": "Suicidality and self-harm",
+    "domain_id": "CD08",
+    "domain_label": "Mental health and psychological distress",
+    "plain_language_definition": "Suicidal ideation/behaviour or deliberate/non-suicidal self-harm.",
+    "search_aliases": "suicide; suicidal ideation; self harm; NSSI",
+    "status": "ACTIVE",
+    "linked_objects": 12
+  },
+  {
+    "construct_id": "C0806",
+    "preferred_label": "Trauma and PTSD symptoms",
+    "domain_id": "CD08",
+    "domain_label": "Mental health and psychological distress",
+    "plain_language_definition": "Trauma-related/PTSD symptoms.",
+    "search_aliases": "PTSD; trauma symptoms",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C0903",
+    "preferred_label": "Capability wellbeing",
+    "domain_id": "CD09",
+    "domain_label": "Wellbeing, quality of life and capability",
+    "plain_language_definition": "Capability-based wellbeing/freedom.",
+    "search_aliases": "capability; ICECAP",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0906",
+    "preferred_label": "Flourishing",
+    "domain_id": "CD09",
+    "domain_label": "Wellbeing, quality of life and capability",
+    "plain_language_definition": "Positive psychological/social flourishing.",
+    "search_aliases": "flourishing",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0902",
+    "preferred_label": "General quality of life",
+    "domain_id": "CD09",
+    "domain_label": "Wellbeing, quality of life and capability",
+    "plain_language_definition": "Global/general quality of life.",
+    "search_aliases": "quality of life; QOL",
+    "status": "ACTIVE",
+    "linked_objects": 6
+  },
+  {
+    "construct_id": "C0901",
+    "preferred_label": "Health-related quality of life",
+    "domain_id": "CD09",
+    "domain_label": "Wellbeing, quality of life and capability",
+    "plain_language_definition": "Health-related quality of life/health status profiles.",
+    "search_aliases": "HRQoL; health quality of life",
+    "status": "ACTIVE",
+    "linked_objects": 5
+  },
+  {
+    "construct_id": "C0904",
+    "preferred_label": "Life satisfaction",
+    "domain_id": "CD09",
+    "domain_label": "Wellbeing, quality of life and capability",
+    "plain_language_definition": "Overall satisfaction with life.",
+    "search_aliases": "life satisfaction",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C0905",
+    "preferred_label": "Subjective wellbeing",
+    "domain_id": "CD09",
+    "domain_label": "Wellbeing, quality of life and capability",
+    "plain_language_definition": "General subjective/personal wellbeing.",
+    "search_aliases": "wellbeing; personal wellbeing",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1008",
+    "preferred_label": "Enabling or affected-family coping behaviour",
+    "domain_id": "CD10",
+    "domain_label": "Relationships, social functioning and affected-other impact",
+    "plain_language_definition": "Behaviours/coping of family members in response to addiction.",
+    "search_aliases": "enabling; family coping",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1007",
+    "preferred_label": "Family environment and cohesion",
+    "domain_id": "CD10",
+    "domain_label": "Relationships, social functioning and affected-other impact",
+    "plain_language_definition": "Family environment, adaptability or cohesion.",
+    "search_aliases": "family environment; cohesion; family functioning",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1002",
+    "preferred_label": "Family impact or burden",
+    "domain_id": "CD10",
+    "domain_label": "Relationships, social functioning and affected-other impact",
+    "plain_language_definition": "Impact/burden on family members or close others.",
+    "search_aliases": "family impact; caregiver burden; family burden",
+    "status": "ACTIVE",
+    "linked_objects": 6
+  },
+  {
+    "construct_id": "C1005",
+    "preferred_label": "Interpersonal conflict or abuse",
+    "domain_id": "CD10",
+    "domain_label": "Relationships, social functioning and affected-other impact",
+    "plain_language_definition": "Conflict, aggression/abuse or coercive interpersonal behaviour.",
+    "search_aliases": "conflict; domestic abuse; violence",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C1004",
+    "preferred_label": "Loneliness",
+    "domain_id": "CD10",
+    "domain_label": "Relationships, social functioning and affected-other impact",
+    "plain_language_definition": "Perceived loneliness/social isolation.",
+    "search_aliases": "loneliness; isolation",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1001",
+    "preferred_label": "Relationship functioning or satisfaction",
+    "domain_id": "CD10",
+    "domain_label": "Relationships, social functioning and affected-other impact",
+    "plain_language_definition": "Quality/functioning/satisfaction of close relationships.",
+    "search_aliases": "relationship satisfaction; dyadic adjustment; marital quality",
+    "status": "ACTIVE",
+    "linked_objects": 9
+  },
+  {
+    "construct_id": "C1006",
+    "preferred_label": "Social adjustment and participation",
+    "domain_id": "CD10",
+    "domain_label": "Relationships, social functioning and affected-other impact",
+    "plain_language_definition": "Social/role adjustment and participation.",
+    "search_aliases": "social functioning; social adjustment; participation",
+    "status": "ACTIVE",
+    "linked_objects": 5
+  },
+  {
+    "construct_id": "C1003",
+    "preferred_label": "Social support",
+    "domain_id": "CD10",
+    "domain_label": "Relationships, social functioning and affected-other impact",
+    "plain_language_definition": "Perceived/available social support.",
+    "search_aliases": "social support; support",
+    "status": "ACTIVE",
+    "linked_objects": 5
+  },
+  {
+    "construct_id": "C1102",
+    "preferred_label": "Treatment or session experience",
+    "domain_id": "CD11",
+    "domain_label": "Treatment and service experience",
+    "plain_language_definition": "Perceptions/experience of a treatment session or intervention.",
+    "search_aliases": "session evaluation; treatment perceptions",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1101",
+    "preferred_label": "Treatment satisfaction",
+    "domain_id": "CD11",
+    "domain_label": "Treatment and service experience",
+    "plain_language_definition": "Satisfaction with treatment/services.",
+    "search_aliases": "client satisfaction; treatment satisfaction",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C1203",
+    "preferred_label": "Attitudes toward gambling",
+    "domain_id": "CD12",
+    "domain_label": "Prevention, knowledge and safer gambling",
+    "plain_language_definition": "General attitudes toward gambling.",
+    "search_aliases": "attitudes; gambling attitudes",
+    "status": "ACTIVE",
+    "linked_objects": 4
+  },
+  {
+    "construct_id": "C1204",
+    "preferred_label": "Positive play or safer gambling",
+    "domain_id": "CD12",
+    "domain_label": "Prevention, knowledge and safer gambling",
+    "plain_language_definition": "Positive/safer-gambling behaviours and beliefs.",
+    "search_aliases": "positive play; safer gambling; responsible gambling",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1205",
+    "preferred_label": "Protective behaviour",
+    "domain_id": "CD12",
+    "domain_label": "Prevention, knowledge and safer gambling",
+    "plain_language_definition": "Behavioural strategies intended to reduce risk/harm.",
+    "search_aliases": "protective strategies; protective behaviour",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1308",
+    "preferred_label": "Attention and attentional bias",
+    "domain_id": "CD13",
+    "domain_label": "Impulsivity, decision-making and cognitive processes",
+    "plain_language_definition": "Attention or bias toward salient cues.",
+    "search_aliases": "attention; attentional bias; dot probe",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1307",
+    "preferred_label": "Cognitive flexibility and set shifting",
+    "domain_id": "CD13",
+    "domain_label": "Impulsivity, decision-making and cognitive processes",
+    "plain_language_definition": "Ability to shift rules/sets or adapt cognitive strategy.",
+    "search_aliases": "set shifting; cognitive flexibility; reversal",
+    "status": "ACTIVE",
+    "linked_objects": 6
+  },
+  {
+    "construct_id": "C1310",
+    "preferred_label": "Confidence calibration or overconfidence",
+    "domain_id": "CD13",
+    "domain_label": "Impulsivity, decision-making and cognitive processes",
+    "plain_language_definition": "Calibration between confidence and accuracy / overconfidence bias.",
+    "search_aliases": "overconfidence; confidence accuracy; calibration",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C1303",
+    "preferred_label": "Decision-making under risk or uncertainty",
+    "domain_id": "CD13",
+    "domain_label": "Impulsivity, decision-making and cognitive processes",
+    "plain_language_definition": "Decision-making quality/preferences under risk/uncertainty.",
+    "search_aliases": "decision making; risky decision making",
+    "status": "ACTIVE",
+    "linked_objects": 7
+  },
+  {
+    "construct_id": "C1305",
+    "preferred_label": "Delay discounting",
+    "domain_id": "CD13",
+    "domain_label": "Impulsivity, decision-making and cognitive processes",
+    "plain_language_definition": "Preference for smaller sooner versus larger later outcomes.",
+    "search_aliases": "temporal discounting; delay discounting",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1314",
+    "preferred_label": "Executive functioning",
+    "domain_id": "CD13",
+    "domain_label": "Impulsivity, decision-making and cognitive processes",
+    "plain_language_definition": "Broad executive function/problem solving.",
+    "search_aliases": "executive function; problem solving",
+    "status": "ACTIVE",
+    "linked_objects": 4
+  },
+  {
+    "construct_id": "C1312",
+    "preferred_label": "General cognitive ability or intelligence",
+    "domain_id": "CD13",
+    "domain_label": "Impulsivity, decision-making and cognitive processes",
+    "plain_language_definition": "General intellectual/cognitive ability.",
+    "search_aliases": "intelligence; cognitive ability; IQ",
+    "status": "ACTIVE",
+    "linked_objects": 5
+  },
+  {
+    "construct_id": "C1301",
+    "preferred_label": "Impulsivity",
+    "domain_id": "CD13",
+    "domain_label": "Impulsivity, decision-making and cognitive processes",
+    "plain_language_definition": "Trait or behavioural impulsivity.",
+    "search_aliases": "impulsive; impulsivity",
+    "status": "ACTIVE",
+    "linked_objects": 7
+  },
+  {
+    "construct_id": "C1302",
+    "preferred_label": "Inhibitory control",
+    "domain_id": "CD13",
+    "domain_label": "Impulsivity, decision-making and cognitive processes",
+    "plain_language_definition": "Ability to inhibit prepotent responses.",
+    "search_aliases": "response inhibition; inhibition; stop signal",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1309",
+    "preferred_label": "Learning and feedback processing",
+    "domain_id": "CD13",
+    "domain_label": "Impulsivity, decision-making and cognitive processes",
+    "plain_language_definition": "Learning from outcomes/feedback.",
+    "search_aliases": "learning; reversal learning",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1313",
+    "preferred_label": "Memory",
+    "domain_id": "CD13",
+    "domain_label": "Impulsivity, decision-making and cognitive processes",
+    "plain_language_definition": "Memory performance/recall.",
+    "search_aliases": "memory; recall",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1304",
+    "preferred_label": "Risk-taking",
+    "domain_id": "CD13",
+    "domain_label": "Impulsivity, decision-making and cognitive processes",
+    "plain_language_definition": "Propensity for risky choices/behaviour.",
+    "search_aliases": "risk taking; risk propensity",
+    "status": "ACTIVE",
+    "linked_objects": 4
+  },
+  {
+    "construct_id": "C1315",
+    "preferred_label": "Sensation seeking",
+    "domain_id": "CD13",
+    "domain_label": "Impulsivity, decision-making and cognitive processes",
+    "plain_language_definition": "Preference for novel/intense stimulation.",
+    "search_aliases": "sensation seeking",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1311",
+    "preferred_label": "Time estimation",
+    "domain_id": "CD13",
+    "domain_label": "Impulsivity, decision-making and cognitive processes",
+    "plain_language_definition": "Perception/estimation of elapsed time.",
+    "search_aliases": "duration estimation; time perception",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1306",
+    "preferred_label": "Working memory",
+    "domain_id": "CD13",
+    "domain_label": "Impulsivity, decision-making and cognitive processes",
+    "plain_language_definition": "Working-memory performance/capacity.",
+    "search_aliases": "working memory; digit span",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1401",
+    "preferred_label": "Alcohol use or problems",
+    "domain_id": "CD14",
+    "domain_label": "Substance use and other comorbidity",
+    "plain_language_definition": "Alcohol consumption, misuse, dependence or alcohol-related problems.",
+    "search_aliases": "alcohol use; alcohol problems; drinking",
+    "status": "ACTIVE",
+    "linked_objects": 24
+  },
+  {
+    "construct_id": "C1406",
+    "preferred_label": "Compulsivity or obsessive-compulsive symptoms",
+    "domain_id": "CD14",
+    "domain_label": "Substance use and other comorbidity",
+    "plain_language_definition": "Compulsivity/OCD-type symptoms.",
+    "search_aliases": "compulsivity; obsessive compulsive; OCD",
+    "status": "ACTIVE",
+    "linked_objects": 6
+  },
+  {
+    "construct_id": "C1402",
+    "preferred_label": "Drug use or problems",
+    "domain_id": "CD14",
+    "domain_label": "Substance use and other comorbidity",
+    "plain_language_definition": "Illicit/non-alcohol drug use, misuse or dependence.",
+    "search_aliases": "drug use; drug problems; substance use",
+    "status": "ACTIVE",
+    "linked_objects": 19
+  },
+  {
+    "construct_id": "C1407",
+    "preferred_label": "Eating-disorder symptoms",
+    "domain_id": "CD14",
+    "domain_label": "Substance use and other comorbidity",
+    "plain_language_definition": "Eating-disorder symptoms/pathology.",
+    "search_aliases": "eating disorder",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1409",
+    "preferred_label": "Impulsive-compulsive disorder symptoms",
+    "domain_id": "CD14",
+    "domain_label": "Substance use and other comorbidity",
+    "plain_language_definition": "Impulse-control/compulsive disorder symptoms across behaviours.",
+    "search_aliases": "impulse control disorders; impulsive-compulsive behaviours",
+    "status": "ACTIVE",
+    "linked_objects": 4
+  },
+  {
+    "construct_id": "C1405",
+    "preferred_label": "Internet or gaming disorder/problems",
+    "domain_id": "CD14",
+    "domain_label": "Substance use and other comorbidity",
+    "plain_language_definition": "Problematic internet/video-gaming use or disorder.",
+    "search_aliases": "internet addiction; gaming disorder; game dependence",
+    "status": "ACTIVE",
+    "linked_objects": 8
+  },
+  {
+    "construct_id": "C1403",
+    "preferred_label": "Nicotine dependence or tobacco use",
+    "domain_id": "CD14",
+    "domain_label": "Substance use and other comorbidity",
+    "plain_language_definition": "Tobacco/nicotine use or dependence.",
+    "search_aliases": "smoking; nicotine; tobacco",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C1411",
+    "preferred_label": "Non-gambling craving or urge",
+    "domain_id": "CD14",
+    "domain_label": "Substance use and other comorbidity",
+    "plain_language_definition": "Craving/urge for substances or other addictive behaviours.",
+    "search_aliases": "substance craving; cocaine craving; alcohol urge; craving experience",
+    "status": "ACTIVE",
+    "linked_objects": 4
+  },
+  {
+    "construct_id": "C1404",
+    "preferred_label": "Other addictive behaviours",
+    "domain_id": "CD14",
+    "domain_label": "Substance use and other comorbidity",
+    "plain_language_definition": "Other behavioural/addictive problems not gambling.",
+    "search_aliases": "addiction; addictive behaviour",
+    "status": "ACTIVE",
+    "linked_objects": 4
+  },
+  {
+    "construct_id": "C1408",
+    "preferred_label": "Personality-disorder features",
+    "domain_id": "CD14",
+    "domain_label": "Substance use and other comorbidity",
+    "plain_language_definition": "Personality-disorder features/pathology.",
+    "search_aliases": "personality disorder; borderline features",
+    "status": "ACTIVE",
+    "linked_objects": 4
+  },
+  {
+    "construct_id": "C1410",
+    "preferred_label": "Social and communication difficulties",
+    "domain_id": "CD14",
+    "domain_label": "Substance use and other comorbidity",
+    "plain_language_definition": "Social/communication difficulties associated with neurodevelopmental conditions.",
+    "search_aliases": "social communication; autism traits",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1412",
+    "preferred_label": "Substance-related consequences",
+    "domain_id": "CD14",
+    "domain_label": "Substance use and other comorbidity",
+    "plain_language_definition": "Adverse consequences/problems attributable to alcohol or other substance use.",
+    "search_aliases": "substance consequences; alcohol consequences; drinking problems",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1502",
+    "preferred_label": "Functional impairment or disability",
+    "domain_id": "CD15",
+    "domain_label": "Physical health, functioning and disability",
+    "plain_language_definition": "Impairment/disability in work, social or everyday functioning.",
+    "search_aliases": "disability; functional impairment; functioning",
+    "status": "ACTIVE",
+    "linked_objects": 5
+  },
+  {
+    "construct_id": "C1505",
+    "preferred_label": "Medication-related motor symptoms",
+    "domain_id": "CD15",
+    "domain_label": "Physical health, functioning and disability",
+    "plain_language_definition": "Drug-induced extrapyramidal or other treatment-related motor symptoms.",
+    "search_aliases": "extrapyramidal; motor symptoms",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1501",
+    "preferred_label": "Physical health",
+    "domain_id": "CD15",
+    "domain_label": "Physical health, functioning and disability",
+    "plain_language_definition": "General physical health status.",
+    "search_aliases": "physical health; health status",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C1504",
+    "preferred_label": "Sleep quality",
+    "domain_id": "CD15",
+    "domain_label": "Physical health, functioning and disability",
+    "plain_language_definition": "Sleep quality/disturbance.",
+    "search_aliases": "sleep; sleep quality",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1603",
+    "preferred_label": "Affluence or material resources",
+    "domain_id": "CD16",
+    "domain_label": "Socioeconomic, environmental and contextual factors",
+    "plain_language_definition": "Household/family affluence/material resources.",
+    "search_aliases": "affluence; material resources",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1606",
+    "preferred_label": "Crime or legal involvement",
+    "domain_id": "CD16",
+    "domain_label": "Socioeconomic, environmental and contextual factors",
+    "plain_language_definition": "Crime/offending/legal involvement as contextual outcome.",
+    "search_aliases": "crime; offending; legal involvement",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1604",
+    "preferred_label": "Employment or benefit impact",
+    "domain_id": "CD16",
+    "domain_label": "Socioeconomic, environmental and contextual factors",
+    "plain_language_definition": "Employment loss/status or benefit claims.",
+    "search_aliases": "employment; job loss; benefits",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1607",
+    "preferred_label": "Gambling availability or proximity",
+    "domain_id": "CD16",
+    "domain_label": "Socioeconomic, environmental and contextual factors",
+    "plain_language_definition": "Geographic/environmental access/proximity to gambling.",
+    "search_aliases": "availability; proximity; distance to casino",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1605",
+    "preferred_label": "Housing or homelessness",
+    "domain_id": "CD16",
+    "domain_label": "Socioeconomic, environmental and contextual factors",
+    "plain_language_definition": "Housing instability/homelessness.",
+    "search_aliases": "housing; homelessness",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C1609",
+    "preferred_label": "Life events or adversity",
+    "domain_id": "CD16",
+    "domain_label": "Socioeconomic, environmental and contextual factors",
+    "plain_language_definition": "Occurrence/impact of major life events/adversity.",
+    "search_aliases": "life events; adversity",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1602",
+    "preferred_label": "Material hardship or financial strain",
+    "domain_id": "CD16",
+    "domain_label": "Socioeconomic, environmental and contextual factors",
+    "plain_language_definition": "General material hardship/financial strain not specifically gambling expenditure.",
+    "search_aliases": "hardship; financial strain; material strain",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1608",
+    "preferred_label": "Neighbourhood or environmental context",
+    "domain_id": "CD16",
+    "domain_label": "Socioeconomic, environmental and contextual factors",
+    "plain_language_definition": "Neighbourhood/environment context/exposures.",
+    "search_aliases": "neighbourhood environment; environment",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1601",
+    "preferred_label": "Socioeconomic deprivation",
+    "domain_id": "CD16",
+    "domain_label": "Socioeconomic, environmental and contextual factors",
+    "plain_language_definition": "Area/individual deprivation or socioeconomic disadvantage.",
+    "search_aliases": "deprivation; socioeconomic status",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1708",
+    "preferred_label": "Intervention fidelity or adherence",
+    "domain_id": "CD17",
+    "domain_label": "Service, implementation and research process",
+    "plain_language_definition": "Delivery/receipt adherence or fidelity to intervention/protocol.",
+    "search_aliases": "fidelity; adherence; competence",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1705",
+    "preferred_label": "Intervention reach",
+    "domain_id": "CD17",
+    "domain_label": "Service, implementation and research process",
+    "plain_language_definition": "Proportion/extent of target population reached.",
+    "search_aliases": "reach; coverage",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1704",
+    "preferred_label": "Service use or help-seeking behaviour",
+    "domain_id": "CD17",
+    "domain_label": "Service, implementation and research process",
+    "plain_language_definition": "Use of professional services/help-seeking.",
+    "search_aliases": "service use; help seeking",
+    "status": "ACTIVE",
+    "linked_objects": 4
+  },
+  {
+    "construct_id": "C1706",
+    "preferred_label": "Study recruitment",
+    "domain_id": "CD17",
+    "domain_label": "Service, implementation and research process",
+    "plain_language_definition": "Recruitment into a study/intervention evaluation.",
+    "search_aliases": "recruitment",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1707",
+    "preferred_label": "Study retention",
+    "domain_id": "CD17",
+    "domain_label": "Service, implementation and research process",
+    "plain_language_definition": "Retention/follow-up in a study.",
+    "search_aliases": "retention; follow-up",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1701",
+    "preferred_label": "Treatment attendance",
+    "domain_id": "CD17",
+    "domain_label": "Service, implementation and research process",
+    "plain_language_definition": "Attendance/engagement with treatment sessions/services.",
+    "search_aliases": "attendance; treatment attendance",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1702",
+    "preferred_label": "Treatment completion or dropout",
+    "domain_id": "CD17",
+    "domain_label": "Service, implementation and research process",
+    "plain_language_definition": "Completion/dropout from treatment.",
+    "search_aliases": "completion; dropout; attrition",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1703",
+    "preferred_label": "Waiting time",
+    "domain_id": "CD17",
+    "domain_label": "Service, implementation and research process",
+    "plain_language_definition": "Time from referral/need to treatment/service contact.",
+    "search_aliases": "waiting time; wait",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1806",
+    "preferred_label": "Attributable burden",
+    "domain_id": "CD18",
+    "domain_label": "Health-economic and population burden",
+    "plain_language_definition": "Health/social burden attributable to gambling.",
+    "search_aliases": "burden; attributable burden; population burden",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C1805",
+    "preferred_label": "Costs or social costs",
+    "domain_id": "CD18",
+    "domain_label": "Health-economic and population burden",
+    "plain_language_definition": "Monetary costs/social costs attributable to gambling or intervention.",
+    "search_aliases": "costs; social costs; economic cost",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1803",
+    "preferred_label": "Disability weights",
+    "domain_id": "CD18",
+    "domain_label": "Health-economic and population burden",
+    "plain_language_definition": "Severity weights used in burden-of-disease estimation.",
+    "search_aliases": "disability weight",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1801",
+    "preferred_label": "Health utility",
+    "domain_id": "CD18",
+    "domain_label": "Health-economic and population burden",
+    "plain_language_definition": "Preference-based health utility.",
+    "search_aliases": "utility; health state utility",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1804",
+    "preferred_label": "Healthcare and resource use",
+    "domain_id": "CD18",
+    "domain_label": "Health-economic and population burden",
+    "plain_language_definition": "Healthcare/service/resource utilisation relevant to economic evaluation.",
+    "search_aliases": "resource use; healthcare use",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1807",
+    "preferred_label": "Population-attributable fraction",
+    "domain_id": "CD18",
+    "domain_label": "Health-economic and population burden",
+    "plain_language_definition": "Fraction/proportion of outcomes attributable to exposure.",
+    "search_aliases": "PAF; attributable fraction",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1802",
+    "preferred_label": "Quality-adjusted life years",
+    "domain_id": "CD18",
+    "domain_label": "Health-economic and population burden",
+    "plain_language_definition": "QALYs derived from duration and health utility.",
+    "search_aliases": "QALY; quality adjusted life year",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1926",
+    "preferred_label": "Affective style or regulation strategy",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Habitual strategies for regulating/expressing affect.",
+    "search_aliases": "affective style; affect regulation",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1925",
+    "preferred_label": "Alexithymia",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Difficulty identifying and describing emotions.",
+    "search_aliases": "alexithymia; difficulty identifying feelings",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1909",
+    "preferred_label": "Assertiveness",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Assertiveness/response confidence in social situations.",
+    "search_aliases": "assertion; assertiveness",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1901",
+    "preferred_label": "Causal or behavioural mechanisms",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "General mechanisms/pathways contributing to gambling behaviour/harm.",
+    "search_aliases": "mechanisms; pathways; causal mechanisms",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C1904",
+    "preferred_label": "Contextual determinants",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Broader contextual determinants not better classified elsewhere.",
+    "search_aliases": "context; determinants",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C1907",
+    "preferred_label": "Coping",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Coping strategies/resources.",
+    "search_aliases": "coping; coping strategies",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1912",
+    "preferred_label": "Gambling motives",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Reasons/motives for gambling.",
+    "search_aliases": "motives; reasons for gambling",
+    "status": "ACTIVE",
+    "linked_objects": 5
+  },
+  {
+    "construct_id": "C1917",
+    "preferred_label": "Gambling-related affective response",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Affective/emotional responses elicited by gambling/game contexts.",
+    "search_aliases": "gambling affect; gambling emotions",
+    "status": "ACTIVE",
+    "linked_objects": 5
+  },
+  {
+    "construct_id": "C1919",
+    "preferred_label": "General motivation or involvement",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "General personal involvement/motivation not specifically recovery-oriented.",
+    "search_aliases": "involvement; motivation",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1915",
+    "preferred_label": "Mentalization or reflective functioning",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Capacity to understand mental states in self/others.",
+    "search_aliases": "reflective functioning; mentalization",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1913",
+    "preferred_label": "Metacognition",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "General beliefs about thinking/cognition.",
+    "search_aliases": "metacognition; metacognitive beliefs",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1908",
+    "preferred_label": "Mindfulness or attentional awareness",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Mindfulness/dispositional awareness.",
+    "search_aliases": "mindfulness; mindful awareness",
+    "status": "ACTIVE",
+    "linked_objects": 3
+  },
+  {
+    "construct_id": "C1918",
+    "preferred_label": "Perceived social pressure",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Perceived pressure from others/context to behave in certain ways.",
+    "search_aliases": "social pressure; peer pressure",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1905",
+    "preferred_label": "Personality or temperament traits",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "General personality/temperament traits.",
+    "search_aliases": "personality; temperament; character",
+    "status": "ACTIVE",
+    "linked_objects": 8
+  },
+  {
+    "construct_id": "C1921",
+    "preferred_label": "Protective or resilience resources",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "General preventive/resilience resources.",
+    "search_aliases": "preventive resources; resilience; protective resources",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1916",
+    "preferred_label": "Purpose or meaning in life",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Sense of purpose/meaning.",
+    "search_aliases": "purpose in life; meaning",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1920",
+    "preferred_label": "Relapse-risk situations",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Situations or contexts associated with risk of relapse/continued addictive behaviour.",
+    "search_aliases": "risk situations; relapse situations",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1911",
+    "preferred_label": "Religiosity or spirituality",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Religious/spiritual beliefs, behaviour or orientation.",
+    "search_aliases": "religion; spirituality; religiosity",
+    "status": "ACTIVE",
+    "linked_objects": 4
+  },
+  {
+    "construct_id": "C1910",
+    "preferred_label": "Reward sensitivity or behavioural activation",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Sensitivity/approach to reward and behavioural activation.",
+    "search_aliases": "reward sensitivity; BAS; behavioural activation",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1914",
+    "preferred_label": "Rumination or thought suppression",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Repetitive negative thinking or suppression of thoughts.",
+    "search_aliases": "rumination; reflection; thought suppression",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1906",
+    "preferred_label": "Self-esteem",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Global self-esteem/self-worth.",
+    "search_aliases": "self esteem; self worth",
+    "status": "ACTIVE",
+    "linked_objects": 2
+  },
+  {
+    "construct_id": "C1903",
+    "preferred_label": "Social-network structure",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Structure/relationships within social networks.",
+    "search_aliases": "social network; network structure",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1924",
+    "preferred_label": "Superstitious thinking",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "General superstitious thinking or beliefs about chance not explicitly gambling-specific.",
+    "search_aliases": "superstition; superstitious thinking; chance beliefs",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  },
+  {
+    "construct_id": "C1902",
+    "preferred_label": "System relationships and feedback",
+    "domain_id": "CD19",
+    "domain_label": "Mechanisms, context and systems",
+    "plain_language_definition": "Relationships, feedback loops and causal structure within a system.",
+    "search_aliases": "system mapping; feedback loops; causal loops",
+    "status": "ACTIVE",
+    "linked_objects": 1
+  }
+]

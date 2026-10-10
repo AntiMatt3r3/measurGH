@@ -1,0 +1,16 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import constructs from '@/data/constructs.json';
+import { withBase } from '@/lib/utils';
+const domains=[...new Set(constructs.map((c)=>c.domain_label).filter(Boolean))];
+---
+<BaseLayout title="Constructs" wide>
+  <section class="page-head compact"><div class="eyebrow">Constructs</div><h1>What do you want to measure?</h1><p>Construct is separate from measurement approach. A single construct may be represented through an instrument, indicator, method or other approach.</p></section>
+  <section class="filter-panel two"><label class="search-field"><span>Search constructs</span><input id="construct-search" type="search" placeholder="e.g. gambling frequency, wellbeing, financial harm" /></label><label><span>Domain</span><select id="domain"><option value="">All domains</option>{domains.map((d)=><option>{d}</option>)}</select></label></section>
+  <div class="construct-grid">{constructs.map((c)=><article class="construct-card" data-search={`${c.preferred_label} ${c.plain_language_definition||''} ${c.search_aliases||''}`.toLowerCase()} data-domain={c.domain_label}><span class="tag">{c.domain_label}</span><h2>{c.preferred_label}</h2><p>{c.plain_language_definition || 'Definition pending.'}</p><a href={withBase(`browse/?q=${encodeURIComponent(c.preferred_label)}`)} class="text-link">Browse linked measures →</a></article>)}</div>
+</BaseLayout>
+<script>
+  const q=document.querySelector('#construct-search'), d=document.querySelector('#domain'), cards=[...document.querySelectorAll('.construct-card')];
+  const apply=()=>cards.forEach(c=>c.hidden=!((!q.value||c.dataset.search.includes(q.value.toLowerCase()))&&(!d.value||c.dataset.domain===d.value)));
+  q.addEventListener('input',apply);d.addEventListener('change',apply);
+</script>

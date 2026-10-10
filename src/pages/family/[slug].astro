@@ -1,0 +1,19 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ApproachBadge from '@/components/ApproachBadge.astro';
+import families from '@/data/families.json';
+import { withBase } from '@/lib/utils';
+export function getStaticPaths(){ return families.map((family)=>({params:{slug:family.slug},props:{family}})); }
+const { family }=Astro.props;
+const s=family.synthesis || {};
+const considerations=[1,2,3,4,5].map(i=>s[`things_to_consider_${i}`]).filter(Boolean);
+---
+<BaseLayout title={family.public_family_name}>
+  <nav class="breadcrumbs"><a href={withBase('browse/')}>Browse</a><span>/</span><span>Family</span></nav>
+  <section class="detail-head"><ApproachBadge approach={family.public_approach}/><h1>{family.public_family_name}</h1><p class="lede">{family.family_note || `${family.member_count} mapped members`}</p><div class="tag-row"><span class="tag">{family.public_subtype}</span>{s.family_evidence_coverage_status && <span class="tag pale">Evidence coverage: {s.family_evidence_coverage_status.replaceAll('_',' ').toLowerCase()}</span>}</div></section>
+  <section class="panel"><h2>Forms and variants</h2><div class="member-list">{family.members.map((m)=><a href={withBase(`measure/${m.slug}/`)}><span>{m.name}</span><span class:list={['status',m.isEvidenceComplete?'calibrated':'mapped']}>{m.isEvidenceComplete?'Evidence characterised':'Mapped'}</span></a>)}</div></section>
+  <section class="panel"><div class="section-kicker">Family evidence</div><h2>What does the evidence tell us?</h2>{s.evidence_currently_identified_line?<p class="evidence-line">{s.evidence_currently_identified_line}</p>:<p class="muted">Family-level evidence synthesis has not yet been completed.</p>}{s.family_evidence_narrative && String(s.family_evidence_narrative).split(/
+\s*
+/).map(p=><p>{p}</p>)}</section>
+  {considerations.length>0 && <section class="panel"><h2>Things to consider</h2><ul class="consider-list">{considerations.map(x=><li>{x}</li>)}</ul></section>}
+</BaseLayout>

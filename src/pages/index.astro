@@ -1,0 +1,42 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ApproachBadge from '@/components/ApproachBadge.astro';
+import siteMeta from '@/data/site-meta.json';
+import objects from '@/data/objects.json';
+import { withBase } from '@/lib/utils';
+const examples = objects.filter((o) => o.isCalibration).slice(0, 10);
+---
+<BaseLayout title="MeasureGH">
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">Evidence-informed measurement choices</div>
+      <h1>Measure gambling harms with clearer evidence and fewer assumptions.</h1>
+      <p class="lede">MeasureGH brings instruments, assessments, methods, indicators and qualitative approaches into one searchable toolkit — without pretending they all measure the same thing.</p>
+      <div class="hero-actions"><a class="button primary" href={withBase('browse/')}>Browse ways to measure</a><a class="button secondary" href={withBase('choose/')}>Help me choose</a></div>
+      <p class="prototype-note">{siteMeta.version}: 23 calibration exemplars have full evidence characterisation; the wider mapped catalogue is visible for architecture testing.</p>
+    </div>
+    <div class="hero-stats" aria-label="Prototype coverage">
+      <div><strong>{siteMeta.eligibleObjects}</strong><span>eligible evidence objects mapped</span></div>
+      <div><strong>{siteMeta.publicFamilies}</strong><span>public families</span></div>
+      <div><strong>{siteMeta.constructs}</strong><span>specific constructs</span></div>
+      <div><strong>{siteMeta.calibrationComplete}</strong><span>fully characterised calibration exemplars</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading"><div><div class="section-kicker">Five ways to measure</div><h2>Start with the kind of evidence you need</h2></div><a href={withBase('ways-to-measure/')}>See all five →</a></div>
+    <div class="approach-grid">
+      {siteMeta.approaches.map((a) => <a class="approach-card" href={withBase(`browse/?approach=${encodeURIComponent(a.name)}`)}><ApproachBadge approach={a.name}/><strong>{a.name}</strong><span>{a.count} mapped objects · {a.calibrated} calibrated examples</span></a>)}
+    </div>
+  </section>
+
+  <section class="section split-section">
+    <div><div class="section-kicker">Built for comparison, not ranking</div><h2>See what an approach measures, how it works and what the evidence actually supports.</h2><p>MeasureGH separates construct, intended use, method configuration and evidence. A financial indicator is not treated like a questionnaire; a diagnostic framework is not reduced to a reliability coefficient; and a qualitative method is not forced into psychometric language.</p><a class="text-link" href={withBase('methodology/')}>Read the methodology →</a></div>
+    <div class="principles"><div><strong>Exact form matters</strong><span>Evidence stays attached to the version or operationalisation actually studied.</span></div><div><strong>No hidden score</strong><span>Evidence breadth is visible, but MeasureGH does not rank “best” measures.</span></div><div><strong>Gaps stay visible</strong><span>“Not identified” is not silently converted into “no evidence”.</span></div></div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading"><div><div class="section-kicker">Calibration pages</div><h2>Explore the evidence-rich vertical slice</h2></div></div>
+    <div class="card-grid">{examples.map((o) => <a class="measure-card" href={withBase(`measure/${o.slug}/`)}><ApproachBadge approach={o.approach}/><h3>{o.name}</h3><p>{o.primaryConstruct || o.subtype}</p><span class="status calibrated">Evidence characterised</span></a>)}</div>
+  </section>
+</BaseLayout>

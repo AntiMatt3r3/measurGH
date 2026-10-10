@@ -1,0 +1,27 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import objects from '@/data/objects.json';
+import { yes } from '@/lib/utils';
+const compareObjects=objects.filter((o)=>yes(o.compareIndependently));
+const client=compareObjects.map((o)=>({slug:o.slug,name:o.name,acronym:o.acronym,approach:o.approach,subtype:o.subtype,specificity:o.specificity,construct:o.primaryConstruct,family:o.familyName,identity:o.identity,status:o.status,synthesis:o.synthesis}));
+---
+<BaseLayout title="Compare" wide>
+  <section class="page-head compact"><div class="eyebrow">Compare</div><h1>Compare up to four options side by side</h1><p>Comparison shows factual characteristics and evidence. It does not generate a score or winner.</p></section>
+  <section class="compare-picker panel"><div id="pickers"></div><button class="button secondary" id="add-picker">Add another</button></section>
+  <div id="compare-output"></div>
+  <script type="application/json" id="compare-data" set:html={JSON.stringify(client)}></script>
+</BaseLayout>
+<script>
+  const data=JSON.parse(document.querySelector('#compare-data').textContent); const map=new Map(data.map(x=>[x.slug,x]));
+  const pickers=document.querySelector('#pickers'), out=document.querySelector('#compare-output');
+  const params=new URLSearchParams(location.search); let initial=(params.get('items')||'').split(',').filter(Boolean).slice(0,4);
+  if(!initial.length) initial=[''];
+  function options(selected=''){return '<option value="">Choose an option…</option>'+data.map(o=>`<option value="${o.slug}" ${o.slug===selected?'selected':''}>${o.name}</option>`).join('')}
+  function add(selected=''){if(pickers.children.length>=4)return; const label=document.createElement('label');label.innerHTML=`<span>Option ${pickers.children.length+1}</span><select>${options(selected)}</select>`; label.querySelector('select').addEventListener('change',render);pickers.appendChild(label)}
+  initial.forEach(add); document.querySelector('#add-picker').addEventListener('click',()=>add(''));
+  const row=(label,vals)=>`<tr><th>${label}</th>${vals.map(v=>`<td>${v||'—'}</td>`).join('')}</tr>`;
+  function render(){const chosen=[...pickers.querySelectorAll('select')].map(s=>map.get(s.value)).filter(Boolean); if(!chosen.length){out.innerHTML='<p class="empty-state">Choose at least one option to compare.</p>';return} const fields=[
+    ['Approach',o=>o.approach],['Subtype',o=>o.subtype],['Primary construct',o=>o.construct],['Specificity',o=>o.specificity],['Family',o=>o.family],['Intended use',o=>o.identity.intended_use],['Respondent / data source',o=>o.identity.respondent_perspective],['Population / setting',o=>o.identity.intended_population],['Items / components',o=>o.identity.item_or_component_count],['Recall / observation window',o=>o.identity.recall_period],['Administration',o=>o.identity.administration_mode],['Output / scoring',o=>o.identity.scoring_derivation],['Access / licence',o=>o.identity.licensing_access_status],['Evidence currently identified',o=>o.synthesis.evidence_currently_identified_line || 'Evidence characterisation pending']
+  ]; out.innerHTML=`<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>Feature</th>${chosen.map(o=>`<th>${o.name}</th>`).join('')}</tr></thead><tbody>${fields.map(([l,f])=>row(l,chosen.map(f))).join('')}</tbody></table></div>`; const base=document.documentElement.dataset.base||'/'; history.replaceState(null,'',`${base}compare/?items=${chosen.map(o=>o.slug).join(',')}`)}
+  render();
+</script>

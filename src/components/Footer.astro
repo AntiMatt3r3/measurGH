@@ -1,0 +1,10 @@
+---
+import siteMeta from '@/data/site-meta.json';
+import { withBase } from '@/lib/utils';
+---
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div><strong>MeasureGH</strong><p>{siteMeta.version}. Evidence characterisation prototype.</p></div>
+    <div><p><a href={withBase('methodology/')}>How this prototype was built</a></p><p>Public pages do not rank or recommend measures.</p></div>
+  </div>
+</footer>

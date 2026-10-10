@@ -1,0 +1,5 @@
+---
+import { approachClass } from '@/lib/utils';
+const { approach } = Astro.props;
+---
+<span class={`approach-badge ${approachClass(approach)}`}>{approach}</span>
